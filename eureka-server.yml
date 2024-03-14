@@ -1,3 +1,9 @@
+spring:
+  application:
+    name: eureka-server
+  boot:
+    admin:
+      context-path: /admin
 server:
   port: 8761
 eureka:
