@@ -4,9 +4,9 @@ eureka:
   instance:
     hostname: localhost
   client: 
-    registerWithEureka: false # Запретить серверу ConfigServer регистрироваться в службе Eureka
-    fetchRegistry:  false # и не кешировать информацию из реестра. значение false запрещает службе Eureka кешировать информацию из реестра. Это значение следует изменить для служб Spring Boot, которые должны ре- гистрироваться в Eureka;
+    registerWithEureka: false
+    fetchRegistry:  false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
-    waitTimeInMsWhenSyncEmpty: 5 # Начальное время ожидания, прежде чем сервер начнет принимать запросы(ms)
+    waitTimeInMsWhenSyncEmpty: 0
