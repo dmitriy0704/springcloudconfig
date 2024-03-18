@@ -9,12 +9,13 @@ server:
 eureka:
   instance:
     hostname: localhost
+    lease-renewal-interval-in-seconds: 0
   client: 
     registerWithEureka: false
     fetchRegistry:  false
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   server:
-    waitTimeInMsWhenSyncEmpty: 0.85
+    waitTimeInMsWhenSyncEmpty: 0
   renewalPercentThreshold: 0.85
   enableSelfPreservation: false
