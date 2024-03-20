@@ -12,11 +12,12 @@ eureka:
       
  
 spring:
+  main:
+    allow-circular-references: true
   cloud:
     loadbalancer.ribbon.enabled: false
-    gateway:
-      mvc:
-        routes:
+    gateway:      
+      routes:
         - id: organization-service
           uri: lb://organization-service
           predicates:
