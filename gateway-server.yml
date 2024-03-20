@@ -27,10 +27,5 @@ spring:
           filters:
           - RewritePath=/license/(?<path>.*), /$\{path}
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: mappings,env,health,info,gateway
-        
-        
+management.endpoint.health.show-details: "ALWAYS"
+management.endpoints.web.exposure.include: "*"

@@ -21,4 +21,5 @@ eureka:
     # waitTimeInMsWhenSyncEmpty: 5
   # renewalPercentThreshold: 0.85
   # enableSelfPreservation: false
-  management.endpoints.web.exposure.include: "*"
+management.endpoint.health.show-details: "ALWAYS"
+management.endpoints.web.exposure.include: "*"
