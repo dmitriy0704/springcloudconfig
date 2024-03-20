@@ -28,13 +28,9 @@ spring:
           - Path=/license/**
           filters:
           - RewritePath=/license/(?<path>.*), /$\{path}
-
-
-       
+      
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-        
-        
