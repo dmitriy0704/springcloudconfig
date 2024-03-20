@@ -36,6 +36,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: mappings,env,health,info,gateway
         
         
